@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <link rel="stylesheet" href="https://contentful.github.io/widget-sdk/cf-widget-api.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.js"></script>
+    <script src="//api.filestackapi.com/filestack.js"></script>
+  </head>
+  <body>
+    <h3>
+      <%= htmlWebpackPlugin.options.title %>
+    </h3>
+    <script>
+      <%= compilation.assets[htmlWebpackPlugin.files.js[0].substr(htmlWebpackPlugin.files.publicPath.length)].source() %>
+      </script>
+  </body>
+</html>
