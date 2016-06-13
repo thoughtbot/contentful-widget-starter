@@ -1,0 +1,17 @@
+.library-asset {
+}
+
+.library-asset__content {
+  display: flex;
+  justify-content: center;
+}
+
+.library-asset__content__preview {
+  flex: 1 1 80%;
+  margin-right: $cf-margin;
+}
+
+.library-asset__content__button {
+  flex: 1 1 20%;
+}
+

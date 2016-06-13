@@ -1,0 +1,6 @@
+{
+  "id": "my-new-widget",
+  "name": "My New Widget",
+  "srcdoc": "./dist/index.html",
+  "fieldTypes": ["Text"]
+}
